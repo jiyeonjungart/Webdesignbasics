@@ -1,0 +1,117 @@
+body {
+    background-color: #ece7e4;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #222;
+}
+
+.title{
+    align-self: flex-start;
+    width: 100%;
+    font-family: "ivypresto-display";
+    font-weight: 700;
+    font-style: italic; 
+    font-size: 4.5vw;
+    margin: 1rem;
+}
+
+.title > a {
+    color: #222;
+    text-decoration: none;
+}
+
+.title > a:hover {
+    color: #633f29;
+}
+
+nav {
+    margin-top: 2rem;
+}
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    list-style-type: none;
+    font-family: "ivypresto-display";
+    font-weight: 400;
+    font-style: italic; 
+    width: 100%;
+}
+
+nav > ul > li > a:hover {
+    color: #8e7761;
+}
+
+
+nav > ul > li > a {
+    color: #222;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2.5vw;
+    margin: 1rem;
+}
+
+h2{
+    font-family: ivypresto-display, serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 10vw;
+    display: flex;
+    justify-content: center;
+}
+
+.typed-out{
+    font-family: ivypresto-display, serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 3.5vw;
+    margin: 50px 150px;
+}
+
+.typed-out> h3 {
+ font-size: 5vw;
+ font-family: ivypresto-display, serif;
+ font-weight: 100;
+ font-style: normal;
+ margin: 0px;
+}
+
+.container {
+    display:inline-block
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+.typed-out{
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: 
+    typing 1s steps(30, end) forwards;
+}
+
+.icons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+  
+.icons > a > i{
+    font-size: 80px;
+    filter: none;
+    color: #222;
+}
+  
+.icons > a > i:hover {
+    filter: none;
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: #8e7761;
+}
