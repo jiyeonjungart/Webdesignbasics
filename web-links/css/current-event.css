@@ -1,0 +1,120 @@
+.title a {
+  color:#333;
+  text-decoration: none;
+  font-family: minion-pro-caption, serif;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.title a:hover{
+  color:rgb(170, 170, 170)
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  .background1 {
+      display: flex;
+      background-image: url('../../assets/fastfashion1.jpeg');
+      height: 50vh;
+      align-items: center;
+      justify-content: center;
+      margin: 20px auto;
+
+  }
+
+  h2{
+    color:white;
+    font-family: minion-pro-caption, serif;
+    font-size: 50px;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .subtitle{
+    display: flex;
+    justify-content: center;
+    font-family: minion-pro-caption, serif;
+    margin-top: 80px;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    color: #333;
+  }
+
+  .content{
+    font-family: minion-pro-caption, serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 25px;
+    margin-left: 20px;
+    color: rgb(39, 37, 35);
+    margin-top: 80px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 60%;
+    filter: grayscale(100%);     
+  }
+
+  .credit{
+    font-size: 10px;
+    font-family: minion-pro-caption, serif;
+    font-weight: 200;
+    font-style: normal;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+.reference{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  height: 10rem;
+  font-family: minion-pro-caption, serif;
+  font-weight: 200;
+  font-size: 15px;
+  color: whitesmoke;
+  font-style: bold;
+  
+}
+
+  @media screen and (max-width: 600px) {
+      .content{
+          font-size: 20px;
+          margin-left: 10px;
+          margin-right: 10px;
+      }
+    }
