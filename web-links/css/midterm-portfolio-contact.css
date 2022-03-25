@@ -1,5 +1,9 @@
 body {
-    background-color: #ece7e4;
+    background-image: url("../../assets/backgroun10.jpg");
+    background-size:160rem;  
+    background-repeat: no-repeat;
+    background-position-y: -500px;
+    
 }
 
 header{
