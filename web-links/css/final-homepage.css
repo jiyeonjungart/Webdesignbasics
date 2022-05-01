@@ -199,6 +199,7 @@ margin:0px;
 
 ul {
   list-style-type: none;
+  padding-inline-start: 0px;
  }
 
 
@@ -213,6 +214,7 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-left: 0;
 }
 
 .products li .productimage{
@@ -235,7 +237,7 @@ ul {
 
 .productlist{
   box-sizing: border-box;
-  min-height: 120px;
+ height: 120px;
   padding: 10px 8px 0;
   display: flex;
   flex-direction: column;
@@ -267,6 +269,15 @@ ul {
   border-radius: 2px;
 }
 
+.productname a:hover{
+  color: rgb(0, 0, 255);
+  text-decoration: underline solid rgb(0, 0, 255);
+}
+
+.button:hover{
+  border: .3px solid rgb(0, 0, 0);
+}
+
 .price{
   padding-left: 80px;
 }
@@ -275,21 +286,158 @@ ul {
   box-sizing: border-box;
   background-color: rgb(250, 242, 244);
   margin-top: 32px;
-  padding-top: 40px;
-    padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin-left: 0;
 }
 
 h2{
   font-family: kepler-std,serif;
-font-weight: 300;
-font-style: normal;
-font-size: 36px;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 36px;
+}
+
+.sub1{
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 @media screen and (min-width: 768px) {
   .sub{
-    padding-top: 32px;
-    padding-bottom: 32px;
-    
+    padding-top: 10px;
+    padding-left: 80px;
+    padding-right: 35vw;
+    padding-bottom: 32px; 
   }
+}
+
+@media screen and (max-width: 943px){
+  ul{
+    padding-inline-start: 0 0 0 20px;
+  }
+
+  .productlist{
+    height:100px
+  }
+
+  .faceimg{
+    height: 650px;
+    display: flex;
+    flex-direction: row;
+    padding:10px 10px;
+  }
+
+
+.button{
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.price {
+  padding-left: 50px;
+}
+
+}
+
+
+@media screen and (max-width: 480px){
+ 
+
+  .products li .productimage{
+    height:260px;
+    width:auto;
+  }
+
+}
+
+
+
+@media screen and (max-width: 710px){
+  .faceimg{
+    display: none;
+  }
+
+  .products li .productimage{
+    height:300px;
+    width:auto;
+  }
+
+}
+
+@media screen and (max-width: 445px){
+  .products li .productimage{
+    height:220px;
+    width:auto;
+  }
+  }
+
+.aboutglossier{
+  background-color:#F5E3E7;
+  padding: 56px 10vh 75px;
+  display: flex;
+  flex-direction: row;
+}
+
+.abouticon{
+  width: 100%;
+  max-width: 32px;
+  max-height: 32px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+h3{
+  padding-left: 10vh;
+  padding-right: 10vh;
+ font-size: 28px;
+ font-family: gill-sans-nova, sans-serif;
+ font-weight: 600;
+ font-style:italic;
+ margin-bottom: 0;
+ padding-top: 75px;
+ background-color:#F5E3E7;
+}
+
+.about-sub{
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 500;
+  color: #222;
+  font-style: normal;
+  text-align: left;
+  font-size: 14px;
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 575px){
+ 
+  .aboutglossier{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+}
+
+.press-sum{
+  font-family: kepler-std,serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 36px;
+  color: #222;
+  font-style: italic;
+}
+
+.press{
+  box-sizing: border-box;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    max-width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
 }
