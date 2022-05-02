@@ -19,11 +19,11 @@ body {
     font-size: 15px;
 } 
 
-svg:hover{
+svg:hover {
     color: rgb(0, 0, 255);
 }
 
-h1{
+.h1{
     display:flex;
     flex-direction: row;
     justify-content:space-between;
@@ -32,11 +32,13 @@ h1{
     margin: 0px 30px;
     }
 
-.name {
+.name a {
     font-family: gill-sans-nova, sans-serif;
     font-weight: 600;
     font-style: italic;
     font-size: 30px;
+    text-decoration: none;
+    color: black;
     }   
 
   .nav ul {
@@ -129,27 +131,26 @@ h1{
 
 
 
- .text1{
+.text1{
   font-family: gill-sans-nova, sans-serif;
   font-weight: 600;
   font-style: italic;
   font-size: 50px;
   line-height: 1;
+}
 
- }
-
-   .text2{
+.text2{
   font-family: gill-sans-nova, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
- } 
+} 
 
 
 
 
-.main-text p{
-margin:0px;
+.main-text p {
+  margin:0px;
 }
 
 @media screen and (min-width: 1273px) {
@@ -197,36 +198,33 @@ margin:0px;
 
 }
 
-ul {
-  list-style-type: none;
-  padding-inline-start: 0px;
- }
-
-
-.faceimg{
-  height: 850px;
-  display: flex;
-  flex-direction: row;
-  padding:10px 10px;
-}
-
-.products{
+.products {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-left: 0;
+  padding: 2rem;
 }
 
-.products li .productimage{
-  width:100%;
+.face-img {
+  height: 850px;
+  width: auto;
+}
+
+.product-column {
   display: flex;
-  height: 300px;
-  flex-direction: row;
-  padding: 10px 10px 0 0;
+  flex-direction: column;
+  max-height: 850px;
+  justify-content: space-between;
+  margin-left: 1rem;
+}
+
+.product-image > img {
+  width: 100%;
+  max-height: 300px;
 }
 
 
-.productname a{
+.product-name {
   font-family: gill-sans-nova, sans-serif;
   font-weight: 600;
   color: #222;
@@ -235,51 +233,55 @@ ul {
   font-size: 16px;
 }
 
-.productlist{
-  box-sizing: border-box;
- height: 120px;
-  padding: 10px 8px 0;
+.product-list {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  height: 120px;
+  padding: 10px 8px;
   background-color: #f5f6f7;
-  margin-right: 10px;
+  margin-top: -5px;
 }
 
-.productdescription{
+.product-desc {
   font-family: gill-sans-nova, sans-serif;
   font-weight: 500;
   color: #222;
   text-decoration: none;
   font-style: normal;
   font-size: 14px;
-  padding-bottom: 1rem;
+  margin-top: -1rem;
 }
 
-.button{
+.shop-btn {
   display: flex;
   flex-direction: row;
   text-decoration: none;
+  align-items: center;
+  background-color: white;
+  height: 40%;
+  border: .1px solid rgb(146, 146, 146);
+  border-radius: 2px;
+  justify-content: space-between;
+}
+
+.shop-btn div {
   font-size: 14px;
   font-family: gill-sans-nova, sans-serif;
   font-weight: 600;
   color: #222;
-  background-color: white;
-  padding: 12px 16px;
-  border: .1px solid rgb(146, 146, 146);
-  border-radius: 2px;
+  padding: 0 .5rem;
 }
 
-.productname a:hover{
+.product-name:hover{
   color: rgb(0, 0, 255);
   text-decoration: underline solid rgb(0, 0, 255);
 }
 
-.button:hover{
+.shop-btn:hover{
   border: .3px solid rgb(0, 0, 0);
-}
-
-.price{
-  padding-left: 80px;
 }
 
 
@@ -292,7 +294,7 @@ ul {
   margin-left: 0;
 }
 
-h2{
+h2 {
   font-family: kepler-std,serif;
   font-weight: 300;
   font-style: normal;
@@ -306,7 +308,7 @@ h2{
 }
 
 @media screen and (min-width: 768px) {
-  .sub{
+  .sub {
     padding-top: 10px;
     padding-left: 80px;
     padding-right: 35vw;
@@ -314,65 +316,28 @@ h2{
   }
 }
 
-@media screen and (max-width: 943px){
-  ul{
-    padding-inline-start: 0 0 0 20px;
-  }
-
-  .productlist{
-    height:100px
-  }
-
-  .faceimg{
-    height: 650px;
+@media screen and (max-width: 1000px){
+  .product-column {
     display: flex;
-    flex-direction: row;
-    padding:10px 10px;
+    flex-direction: column;
+    height: 100%;
+    row-gap: 1rem;
   }
-
-
-.button{
-  padding: 5px 10px;
-  font-size: 12px;
-}
-
-.price {
-  padding-left: 50px;
-}
-
 }
 
 
-@media screen and (max-width: 480px){
- 
-
-  .products li .productimage{
-    height:260px;
-    width:auto;
-  }
-
-}
-
-
-
-@media screen and (max-width: 710px){
-  .faceimg{
+@media screen and (max-width: 920px){
+  .face-img {
     display: none;
   }
-
-  .products li .productimage{
-    height:300px;
-    width:auto;
-  }
-
 }
 
 @media screen and (max-width: 445px){
-  .products li .productimage{
-    height: 220px;
-    width:auto;
+  .product-image > img {
+    max-height: 220px;
+    width: auto;
   }
-  }
+}
 
 .aboutglossier{
   background-color:#F5E3E7;
@@ -417,12 +382,10 @@ h3{
 }
 
 @media screen and (max-width: 575px){
- 
   .aboutglossier{
     display: flex;
     flex-direction: column;
   }
-
 }
 
 .footer{
