@@ -32,11 +32,13 @@ h1{
     margin: 0px 30px;
     }
 
-.name {
+.name a{
     font-family: gill-sans-nova, sans-serif;
     font-weight: 600;
     font-style: italic;
     font-size: 30px;
+    text-decoration: none;
+    color:black;
     }   
 
   .nav ul {
@@ -75,6 +77,102 @@ h1{
       margin-right: -4px;
   }
 
+  .menu-title{
+    font-family: gill-sans-nova, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    padding: 20px 100px;
+  }
+
+  .featured{
+    font-family: gill-sans-nova, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    padding: 10px 100px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .makeup, .fragrance{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    padding: 10px 100px;
+    flex-wrap: wrap;
+  }
+
+  .product-card{
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .product-image > img {
+    width: 300px;
+   height: 400px;
+  }
+
+  .product-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    height: 120px;
+    padding: 10px 8px;
+    background-color: #f5f6f7;
+    margin-top: -5px;
+  }
+
+  .product-desc {
+    font-family: gill-sans-nova, sans-serif;
+    font-weight: 500;
+    color: #222;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    margin-top: -1rem;
+  }
+
+  .shop-btn {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+    background-color: white;
+    height: 40%;
+    border: .1px solid rgb(146, 146, 146);
+    border-radius: 2px;
+    justify-content: space-between;
+  }
+  
+  .shop-btn div {
+    font-size: 14px;
+    font-family: gill-sans-nova, sans-serif;
+    font-weight: 600;
+    color: #222;
+    padding: 0 .5rem;
+  }
+  
+  .product-name:hover{
+    color: rgb(0, 0, 255);
+    text-decoration: underline solid rgb(0, 0, 255);
+  }
+  
+  .shop-btn:hover{
+    border: .3px solid rgb(0, 0, 0);
+  }
+
+  .product-name {
+    font-family: gill-sans-nova, sans-serif;
+    font-weight: 600;
+    color: #222;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 16px;
+  }
+
   @media screen and (min-width: 300px) {
     .nav li {
       width: 120px;
@@ -95,3 +193,134 @@ h1{
       margin: 0px 25px;
     }
   }
+
+
+  @media screen and (max-width: 950px) {
+ .product-card{
+   padding:.5rem;
+ }
+
+ .menu-title{
+  padding: 20px 108px;
+}
+
+.featured{
+  padding: 10px 108px;
+}
+  }
+
+  .bottom-text{
+    font-family: gill-sans-nova, sans-serif;
+    font-weight: 400;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 3vh 30vw;
+    font-style: normal;
+    font-size: 14px;
+    position: relative;
+    line-height: 1.5;
+  }
+
+  @media screen and (max-width: 860px) {
+    .product-card{
+      padding:1rem;
+    }
+
+    .makeup, .fragrance{
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+    }
+    .menu-title{
+     padding: 1rem;
+   }
+   
+   .featured{
+     padding: 1rem;
+   }
+
+   .bottom-text{
+    margin: 3vh 10vw;
+   }
+  }
+
+
+.footer{
+  background-color: black;
+  color:white;
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 80px 100px;
+  font-size: 16px;
+  margin-top: 50px;
+}
+
+.footer-start{
+padding-right: 3rem;
+margin-bottom: 10px;
+}
+
+.container input{
+  background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    margin-top: 7px;
+    width:30vw;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-logo{
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.footer-logo img{
+  filter:invert(100%);
+  height: 40px;
+  padding-right: 20px;
+ 
+}
+
+.socialmedia{
+padding-left: 80px;
+}
+
+.social img{
+  height: 20px;
+}
+
+@media screen and (max-width: 485px){
+  .footer-start{
+    padding:0;
+  } 
+ }
+
+ @media screen and (max-width: 690px){
+.footer-logo{
+  flex-direction: column;
+  } 
+  .footer-logo img{
+    padding-right: 0;
+    padding-bottom: 10px;
+  }
+
+  .logo-text{
+    padding-bottom: 10px;
+  }
+
+  .socialmedia{
+    padding-left: 0;
+  }
+
+  .social img{
+    padding:0 5px;
+  }
+ }
