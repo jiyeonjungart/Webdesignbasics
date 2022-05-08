@@ -7,6 +7,7 @@ body {
 .top{
     height: 13%;
     background-color: rgb(250, 242, 244);
+    overflow: hidden;
 }
 .top-bar{
     text-align: center;
@@ -27,27 +28,73 @@ svg:hover {
 .dropdown-content a{
   float: left;
   overflow: hidden;
-  position: absolute;
+  position: fixed;
 }
 
 .menu-bar:hover > .dropdown-content > a
 {
   opacity: 1;
   visibility: visible;
-  position: relative;
+  position: fixed;
   display: inline-block;
 }
 
-.dropdown-content a{
-  background: pink;
-  visibility: hidden;
-  opacity: 0;
-  min-width: 5rem;
-  transition: all 0.5s ease;
-  margin-top: 2rem;
+.dropdown-fragrance{
+  left: 35px;
+  top:180px;
+}
+
+.dropdown-makeup{
+  left: 35px;
+  top:140px;
+}
+
+.dropdown-shopall{
+  left: 35px;
+  top:100px;
 }
 
 
+.menu-bar:hover > .dropdown-content{
+  opacity: .95;
+  visibility: visible;
+  border:rgb(165, 165, 165) solid .5px;
+  position: fixed;
+  padding-left: 10rem;
+  padding-right:8rem;
+  padding-bottom: 50rem;
+  padding-top:10rem;
+  left: 0;
+  top: 0;
+  margin: 0;
+  background-color: white;
+}
+
+.dropdown-content{
+  position: absolute;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.dropdown-content a{
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 500;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  transition: all 0.2s ease;
+}
+
+@media screen and (max-width: 600px) {
+    
+  .menu-bar:hover > .dropdown-content{
+    padding-left: 5rem;
+    padding-right: 6em;
+  }
+}
  
 .h1{
     display:flex;
@@ -114,6 +161,8 @@ svg:hover {
   }
 
   @media screen and (max-width: 600px) {
+    
+    
     .nav a {
       text-align: justify;
     }
