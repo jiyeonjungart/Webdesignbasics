@@ -368,7 +368,7 @@ svg:hover {
   margin-left: 0;
 }
 
-h2 {
+h1 {
   font-family: kepler-std,serif;
   font-weight: 300;
   font-style: normal;
@@ -428,7 +428,7 @@ h2 {
   margin-top: 16px;
 }
 
-h3{
+h2{
   padding-left: 10vh;
   padding-right: 10vh;
  font-size: 28px;
