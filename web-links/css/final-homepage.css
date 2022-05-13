@@ -21,6 +21,7 @@ body {
 } 
 
 
+
 svg:hover {
     color: rgb(0, 0, 255);
 }
@@ -37,7 +38,10 @@ svg:hover {
   visibility: visible;
   position: fixed;
   display: inline-block;
+  transition: .2s;
 }
+
+
 
 .dropdown-fragrance{
   left: 35px;
@@ -56,6 +60,8 @@ svg:hover {
 
 
 .menu-bar:hover > .dropdown-content{
+  filter: blur(100%);
+  transition: .2s;
   opacity: .95;
   visibility: visible;
   border:rgb(165, 165, 165) solid .5px;
@@ -163,9 +169,7 @@ svg:hover {
   @media screen and (max-width: 600px) {
     
     
-    .nav a {
-      text-align: justify;
-    }
+
 
     h1{
       padding: 0px 0px;
