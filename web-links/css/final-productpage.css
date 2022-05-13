@@ -36,6 +36,7 @@ svg:hover{
   visibility: visible;
   position: fixed;
   display: inline-block;
+  color: black;
 }
 
 .dropdown-fragrance{
