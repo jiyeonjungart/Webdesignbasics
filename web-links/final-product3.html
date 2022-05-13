@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/final-productpage.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lce8pdj.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script data-require="jquery@3.1.1" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./css/final-product.js"></script>
+    <title>Glossier You</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="top">
+        <div class="top-bar">
+        You Solid is back in stock! The ultimate personal fragrance in the ultimate portable format.
+        </div>
+    </div>
+    <div class="h1">
+        <div class="dropdown">
+        <div class="menu-bar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+              <div class="dropdown-content">
+                <a class="dropdown-shopall" href="final-shopall.html">Shop All</a>
+                <a class="dropdown-makeup" href="final-makeup.html">Makeup</a>
+                <a class="dropdown-fragrance" href="final-fragrance.html">Fragrance</a>
+              </div>
+        </div>
+        </div>
+    
+        <div class="name">
+            <a href="final-homepage.html">
+         Glossier.
+            </a>
+        </div>
+    
+  <div class="bag">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+          <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+        </svg>
+    </div>
+  </div> 
+<!-- nav -->
+  <div class="nav">
+    <ul>
+      <li class="home"><a href="final-shopall.html">Shop All</a>
+      <li class="about"><a href="final-makeup.html">Makeup</a>
+      <li class="news"><a href="final-fragrance.html">Fragrance</a>
+    </ul>
+  </div>
+
+  <div class="margin-side">
+  <!-- product -->
+  <div class="product-info">
+  <div class="silder-container">
+  <div class="w3-row-paddingw3-section">
+    <div class="productimg-contain">
+      <img class="productimg" src="../assets/GlossierYou(1).webp" onclick="currentDiv(1)" alt="productimg1">
+    </div>
+    <div class="productimg-contain">
+      <img class="productimg" src="../assets/glossier-you_02.webp" onclick="currentDiv(2)" alt="productimg2">
+    </div>
+    <div class="productimg-contain">
+      <img class="productimg" src="../assets/glossier-you_03.webp" onclick="currentDiv(3)" alt="productimg3">
+    </div>
+    <div class="productimg-contain">
+      <img class="productimg" src="../assets/glossier-you_04.webp" onclick="currentDiv(4)" alt="productimg4">
+    </div>
+    <div class="productimg-contain">
+      <img class="productimg" src="../assets/you-edp-03.webp" onclick="currentDiv(5)" alt="productimg5">
+    </div>
+    <div class="productimg-contain">
+      <img class="productimg" src="../assets/you-edp-06.webp" onclick="currentDiv(6)" alt="productimg6">
+    </div>
+  </div>
+
+  <div class="w3-content">
+    <img class="myslides" src="../assets/GlossierYou(1).webp" style=" max-width:440px" alt="productimg01">
+    <img class="myslides" src="../assets/GlossierYou(1).webp" style="max-width:440px; display:none" alt="productimg02">
+    <img class="myslides" src="../assets/glossier-you_03.webp" style="max-width:440px; display:none" alt="productimg03">
+    <img class="myslides" src="../assets/glossier-you_04.webp" style="max-width:440px; display:none" alt="productimg04">
+    <img class="myslides" src="../assets/you-edp-03.webp" style="max-width:440px; display:none" alt="productimg05">
+    <img class="myslides" src="../assets/you-edp-06.webp" style="max-width:440px; display:none" alt="productimg06">
+  </div>
+  <script>
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("myslides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+    }
+    x[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " w3-opacity-off";
+  }
+  </script>
+  </div>
+
+  <div class="main-product-desc">
+    <div class="main-product-name">
+        Glossier You
+    </div>
+
+    <div class="product-desc1"> eau de parfum • 1.7 fl oz / 50 ml  </div>
+
+    <div class="product-desc2">The ultimate personal fragrance.</div>
+
+    <div class="product-desc3"><span class=product-desc-bold>What it is:</span> An eau de parfum that melts into skin and smells a bit different on everyone</div>
+
+    <div class="product-desc4">WHY IT'S SPECIAL:</div>
+
+    <ul class="product-desc5">
+      <li class="product-desc05">How to describe Glossier You? First you smell the pink pepper—the bright, sparkling, spicy top note that makes a good first impression. Then you get into the woodsy, slightly sweet heart of the scent that comes from ambrette seeds and warm, ambery ambrox. It’s balanced with iris, a white floral, for a creamy freshness.</li>
+      <li class="product-desc05">It’s not one of those perfumes you wear to become someone else. Mostly, it smells like you: soft, warm, familiar. We designed everything about it to feel open ended, like it’ll grow with you no matter where you are in your personal evolution. This is not a finished product. It needs you 😉</li>
+    </ul>
+    
+
+
+
+    <div class="product-desc9">
+
+
+
+    <div class="product-desc09">
+
+    </div>
+    </div>
+    
+
+
+  <div class="shop">
+    <div class="quantity buttons_added">
+      <input type="button" value="-" class="minus">
+      <input type="number" step="1" min="1" max="20" name="quantity" value="1" title="Qty" class="input-text qty text">
+      <input type="button" value="+" class="plus">
+    </div>
+
+    <div class="add-to-bag"> Add to Bag- $18   </div>
+  </div>
+
+<div class="prereview-num"> 3828 Reviews</div>
+    <div class="prereivew-box">
+      <div class="review-highlight">REVIEW HIGHLIGHTS</div>
+      
+      <div class="prereview">
+        <div class="prereview-star">
+          <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+      </div>
+        <div class="prereview-title">New- Old School</div>
+        <div class="prereview-mini">Ok, so I am a mom....a 50yr old mom. I only know about Glossier because my teenage daughters love it.....and now I do too. For any other “oldies” out there I can solve the mystery of “What does this perfume smell like?” .....it is an amazing combination of the scent of Coty Wild Musk and Love’s Baby Soft. (for you millennials this are two perfumes that were super popular with teenage girls in the 80’s). Now that I have said that....let me tell you that the scent is wonderful. It’s light, yet warm. It is the kind of fragrance that you want to have behind your ear when your husband (or boyfriend) hugs you. It is the kind of scent that will make people remember “ how good you smell” and when they smell it somewhere else they will say with love- “Ahhhh, this smells just like....your name here.” I AM that lady who gets a headache from a LOT of perfumes. If my daughter gets in the car with a sweet fruity cheap body spray on - I will have a headache for the rest of the day. This perfume is so light and warm and feminine that it will put you in a good mood. Really. </div>
+        <div class="prereview-help">412 people found this helpful</div>
+      </div>
+
+      <div class="prereview">
+        <div class="prereview-star">
+          <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+        </div>
+        <div class="prereview-title">Bring back the Mini Compact!</div>
+        <div class="prereview-mini">I love this fragrance but wish you guys still had the compact version. When will you be bringing it back??</div>
+        <div class="prereview-help">202 people found this helpful</div>
+      </div>
+
+      <div class="prereview">
+        <div class="prereview-star">
+          <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+        </div>
+        <div class="prereview-title">Perfect. Don’t change a thing. But bring back the compact!</div>
+        <div class="prereview-mini">First, bring back the solid! As someone with asthma that is triggered by most fragrances this is my go-to, my one and only. The solid doesn’t get in the air which makes it safe for me to use. The scent is so magical and unique. I love the warmth of it. It truly melds with the natural scent of my skin to create something that smells like me. It stays on my skin all day and I only use a dab on each wrist. It doesn’t irritate my sensitive skin and it doesn’t trigger my asthma. I have tried a sample of the liquid version and I love that too but I prefer the solid because I don’t have to spray it (and possibly risk my asthma getting exacerbated). I also love the feel of the heavy and beautiful little sculpture that is the compact. It feels so right in my hand. I didn’t wear perfume for years until I found You.</div>
+        <div class="prereview-help">160 people found this helpful </div>
+      </div>
+    </div>
+
+    <div class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Ingredients
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content2" id="myDropdown">
+          <div class="ingredient-list">
+            Pink Pepper <span class="ingredient-desc">: bright, sparkling, spicy</span>
+            <br>
+            <br>
+            Iris <span class="ingredient-desc">:floral, green, powdery</span>
+            <br>
+            <br>
+            Ambrette Seeds <span class="ingredient-desc">: woody, warm, sweet</span>
+            <br>
+            <br>
+            Ambrox <span class="ingredient-desc">: creamy, musky, salty</span>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+    }
+    }
+    </script>
+  </div>
+  </div>
+  <!-- review -->
+  <div class="review-container">
+
+    <div class="review-sub">
+      <div class="review-top">
+      <div class="review-num">3828</div>
+      <div class="review-sub1">TOTAL REVIEWS</div>
+    </div>
+
+    <div class="review-container-top">
+      <div class="review-star">
+        <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+        </svg>
+        <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+        </svg>
+        <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+        </svg>
+        <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+          <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+        </svg>
+      </div>
+      <div class="review-sub1">AVERAGE RATING</div>
+      </div>
+    </div>
+  
+
+    <div class="review-container-bottom">
+      <div class="review-row">
+      <div class="review-info">
+        <span class="review-title">Jay</span>
+        <br>
+        05/10/2022
+        <br>
+        Los Angeles, CA
+        <br><br>
+        <span class="review-title">Skin Type</span> Combination
+        <br>
+        <span class="review-title">Skin Shade</span> Medium
+        <br>
+        <span class="review-title">Age Range</span>  25-30
+      </div>
+
+      <div class="review-right">
+      <div class="prereview-star">
+        <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+        </svg>
+        <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+        </svg>
+        <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+        </svg>
+        <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+        </svg>
+        <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+        </svg>
+      <div class="review">
+       <span class="review-title2">Amazing</span> 
+        <br><br>
+        I have an allergy to almost any perfume with alcohol in it, or if it has a strong scent. I get terrible headaches with just about every perfume out there. I’ve spent years, a decade really, looking for THIS perfume!!! It’s amazing. It has such a lovely scent, and I have absolutely zero reaction to it. The scent is light and not strong, which I like because of my allergies. The scent doesn’t last too long… but I’m okay with that, again, I don’t like to smell strong scents all day. If you have a sensitive nose or perfume allergies, this is the perfume you’ve been looking for!!! Also, a lot of reviews say this smells like it’s an older woman perfume… I don’t get that at all. It feels young and fresh, and I get compliments all the time.
+        <br><br>
+        <span class="bottom-line">Bottom Line</span>
+        Yes - I would recommend this to a friend
+      </div>
+    </div>
+  </div>
+    </div>
+
+
+    <div class="review-container-bottom">
+      <div class="review-row">
+      <div class="review-info">
+        <span class="review-title">Kim</span>
+        <br>
+        05/10/2022
+        <br>
+        Orange, CA
+        <br><br>
+        <span class="review-title">Skin Type</span> Combination
+        <br>
+        <span class="review-title">Skin Shade</span> Medium
+        <br>
+        <span class="review-title">Age Range</span> 17-24
+      </div>
+      <div class="review-right">
+      <div class="prereview-star">
+        <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+        </svg>
+        <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+        </svg>
+        <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+        </svg>
+        <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+          </svg>
+      <div class="review">
+       <span class="review-title2">Love the Scent! Wished it lasted longer</span> 
+        <br><br>
+        Honestly, this perfume unlocks a core memory and I can’t stop smelling it! Even my boyfriend loves the scent. Many of my friends and coworkers say that it smells sweet on me or it reminds them of their favorite shampoo. I removed one star mainly because the scent lasted about 2 hours when I was running errands. Other than that, this perfume is my go-to everyday!    
+        <br><br>
+        <span class="bottom-line">Bottom Line</span>
+        Yes - I would recommend this to a friend
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="review-container-bottom">
+      <div class="review-row">
+      <div class="review-info">
+        <span class="review-title">Ash</span>
+        <br>
+        05/10/2022
+        <br>
+        Orem Utah
+      </div>
+      <div class="review-right">
+      <div class="prereview-star">
+        <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"   viewBox="0 0 16 16">
+          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+          </svg>
+      <div class="review">
+       <span class="review-title2">Disappointed</span> 
+        <br><br>
+        Smells disgusting, like dirty clothes you have not washed for a month  <br><br>
+
+      </div>
+    </div>
+  </div></div>
+  </div>
+</div>
+
+  </div>
+</div>
+</div>
+
+    
+  <div class="rec">
+   <div class="rec-text">You may also like</div>
+   <div class="products">
+    <!-- product1 -->
+    <div class="product-card">
+      <a class= product-image href="final-product1.html">
+        <img src="../assets/CloudPaint_Global_01.webp" alt="'cloudpaint">
+      </a>
+      <div class="product-list">
+        <a class="product-name" href="final-product1.html">Cloud Paint</a>
+        <div class="product-desc">seamless cheeck color</div>
+        <a class="shop-btn" href="final-product1.html">
+          <div class="shopnow">Shop Now </div>
+          <div class="price">$18</div>
+        </a>
+      </div>
+    </div>
+    <!-- product2 -->
+    <div class="product-card">
+      <a class= product-image href="final-product2.html">
+        <img src="../assets/BoyBrow_0_1.webp" alt="'boybrow">
+      </a>
+      <div class="product-list">
+        <a class="product-name" href="final-product2.html">Boy Brow</a>
+          <div class="product-desc">grooming pomade</div>
+          <a class="shop-btn" href="final-product2.html">
+            <div class="shopnow">Shop Now </div>
+            <div class="price">$16</div>
+          </a>
+      </div>
+    </div>
+    <!-- product3 -->
+    <div class="product-card">
+      <a class= product-image href="final-product3.html">
+        <img src="../assets/GlossierYou.webp" alt="'glossieryou">
+      </a>
+      <div class="product-list">
+        <a class="product-name" href="final-product3.html">Glossier You</a>
+        <div class="product-desc">eau de parfum</div>
+        <a class="shop-btn" href="final-product3.html">
+          <div class="shopnow">Shop Now</div>
+          <div class="price">$16</div>
+        </a>
+      </div>
+    </div>
+    <!-- product4 -->
+    <div class="product-card">
+      <a class= product-image href="final-product4.html">
+        <img src="../assets/BoyBrow_0_1.webp" alt="'boybrow">
+      </a>
+      <div class="product-list">
+        <a class="product-name" href="final-product4.html">Glossier You Solid</a>
+          <div class="product-desc">perfume solid</div>
+          <a class="shop-btn" href="final-product4.html">
+            <div class="shopnow">Shop Now </div>
+            <div class="price">$30</div>
+          </a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+   <!-- footer -->
+   <div class="footer">
+    <div class="footer-start">
+       We also make emails. <br>
+       Receive email updates on stuff you’ll probably want to know about, including products, launches, and events. Unsubscribe anytime.
+     </div>
+
+    <div class="container">
+        <form method="post" action="mailto:jiyeon210701@gmail.com">
+         <input type="text" placeholder="Your email_" name="mail" required>
+   
+        </form>
+</div>
+     <div class="footer-logo">
+        <img src="../assets/890540.png" alt="logo">
+
+        <div class="logo-text">
+            © 2022 Glossier. All rights reserved.
+        </div>
+
+        <div class="socialmedia">
+        <a class="social" href="https://www.instagram.com/glossier/">
+            <img src="../assets/instagram-logo-svgrepo-com.svg" alt="insta">
+        </a>
+
+        <a class="social" href="https://www.pinterest.com/glossiernyc/_shop/">
+            <img src="../assets/pinterest-svgrepo-com.svg" alt="pinterest">
+        </a>
+
+        <a class="social" href="https://www.facebook.com/glossier">
+            <img src="../assets/facebook-svgrepo-com.svg" alt="facebook">
+        </a>
+        </div>
+    </div>
+</div>
+
+
+
+  
+  
+</body>
+</html>
