@@ -247,13 +247,15 @@ font-weight: 600;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  margin: 0 0 0 8px;
-  padding: 0 0 0 4px;
 }
 
 
 .product-desc05::marker{
   font-size: 10px;
+}
+
+.product-desc0005{
+
 }
 
 .product-desc005::marker{
