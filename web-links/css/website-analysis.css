@@ -11,17 +11,25 @@ main {
     font-size: 40px;
     color:#3E3133;
     margin:2rem 2.5rem;
-    border-bottom: 1px solid black
+    border-bottom: 1px solid black;
 }
 
-.body-image {
-    max-width:70%;
-    height:auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
-   
+.websiteimg, .websiteimg2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.websiteimg2 >img{
+width: 500px;
+margin-bottom: .5rem;
+}
+
+.websiteimg > *{
+    margin-bottom: .5rem;
+    max-width: 800px;
+    
 }
 
 .context-titles {
